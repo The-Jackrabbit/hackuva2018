@@ -9,12 +9,6 @@ const fileUpload = require('express-fileupload');
 const cors = require('cors');
 
 const app = express();
-var base64Img = require('base64-img');
-
-const AWS = require('aws-sdk');
-AWS.config.loadFromPath('./config.json');
-var s3 = new AWS.S3();
-var Upload = require('s3-uploader');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -29,73 +23,165 @@ app.use(cookieParser());
 app.use(fileUpload());
 app.use('/public', express.static(__dirname + '/public'));
 
-var client = new Upload('codedgaze', {
-	aws: {
-	  path: 'images/',
-	  region: 'us-east-1',
-	  acl: 'public-read'
-	},
-  
-	cleanup: {
-	  versions: true,
-	  original: false
-	},
-  
-	original: {
-	  awsImageAcl: 'private'
-	},
-  
-});
-
+/*
+AKIAJHQVKO44SJVGALWQ
+tbaVf9OnTLiISEzVFuGPTUBt5+NIGyvV/5vrG8Qp
+*/
 
 app.post('/upload', (req, res, next) => {
 	// console.log(req);
-	console.log('hello from node!');
-	/*const { spawn } = require('child_process');
-	const pyProg = spawn('python',['./test.py']);
-	
-	pyProg.stdout.on('data', function(data) {
-
-		console.log(data.toString());
-
-	});*/
-
+	let jsondata = {};
 	let imageFile = req.files.file;
-	console.log('imageFile');
-	var params = {
-		Bucket: 'codedgaze',
-		Key: req.body.filename,
-		Body: 'data',
-		ACL:'public-read'
-	};
-	console.log('params');
-	// var data = base64Img.base64Sync(`./public/${req.body.filename}.${req.body.extension}`);
-	/*var s3 = new AWS.S3();
-	
-	s3.client.putObject(params, function(err, params){
-		if (err) { 
-			console.log('Error uploading data: ', err); 
-		} else {
-			//console.log('succesfully uploaded the image!');
-		}
-	});*/
-	console.log('goodbye from node!');
 	imageFile.mv(`${__dirname}/public/${req.body.filename}.${req.body.extension}`, function(err) {
 		if (err) {
 			// return JSON.stringify(res.status(500).send(err));
 		}
-		res.json({file: `public/${req.body.filename}.${req.body.extension}`});
 	});
-	/*
-	client.upload(`./public/${req.body.filename}.${req.body.extension}`, {}, function(err, versions, meta) {
-		if (err) { throw err; }
-	  
-		versions.forEach(function(image) {
-		  console.log(image.width, image.height, image.url);
-		  // 1024 760 https://my-bucket.s3.amazonaws.com/path/110ec58a-a0f2-4ac4-8393-c866d813b8d1.jpg 
+
+	console.log({
+		'req.body.filename': req.body.filename,
+		'req.body.extension': req.body.extension,
+	});
+
+	const bucketName = 'rekog-bucket-hackuva2018';
+	const secretAccessKey = 'tbaVf9OnTLiISEzVFuGPTUBt5+NIGyvV/5vrG8Qp';
+	const accessKeyId = 'AKIAJHQVKO44SJVGALWQ';
+	const region = 'us-east-1';
+
+	var AWS = require('aws-sdk');
+
+	AWS.config.region = region;
+	AWS.config.secretAccessKey = secretAccessKey;
+	AWS.config.accessKeyId = accessKeyId;
+
+	var uploadParams = {
+		'Bucket': bucketName,
+		'Key': `uploads/images/${req.body.filename}.${req.body.extension}`,
+		'Body': req.files.file.data,
+		'ContentEncoding': 'base64', 
+		'Metadata': {
+			'Content-Type': 'image/jpeg'
+		}
+	};
+	var s3 = new AWS.S3();
+	let imageLabels;
+	let explicitImageLabels;
+
+	let uploadPromise = function() {
+		return new Promise(function(resolve, reject) {
+			console.log('starting upload');
+			let isResolved = false;
+			let errorReport = {};
+			var upload = s3.upload(uploadParams, function(err, data){
+				if (err) reject(); // an error occurred
+				else     isResolved=true;  
+			});
+			upload.on('httpUploadProgress', function (progress) {
+				console.log(progress.loaded + ' of ' + progress.total + ' bytes');
+				setTimeout(resolve(), 10000);
+			});
+			upload.send();
+			 
 		});
-	});*/
+	};
+
+	let listItemsPromise = function() {
+		return new Promise(function(resolve, reject) {
+			console.log('starting list items');
+			s3.listObjects({
+				'Bucket': bucketName,
+			}, function(err, data){
+				if (err) reject(); // an error occurred
+				else     console.log({
+					func: 'listObjects',
+					data: data,
+				});  
+			});
+			resolve();
+			 
+		});
+	};
+
+	let labelsPromise = function() {
+		return new Promise(function(resolve, reject) {
+			console.log('starting labels');
+			var rekognition = new AWS.Rekognition();
+			/* This operation detects labels in the supplied image */
+			var labelParams = {
+				Image: {
+					S3Object: {
+						'Bucket': bucketName, 
+						'Name': `uploads/images/${req.body.filename}.${req.body.extension}`,
+					}
+				}, 
+				MaxLabels: 123, 
+				MinConfidence: 20
+			};
+			rekognition.detectLabels(labelParams, function(err, data) {
+				if (err) {
+					console.log({
+						labelParams: JSON.stringify(labelParams),
+						'req.body.filename': req.body.filename,
+						'req.body.extension': req.body.extension,
+						bucketName: bucketName,
+						'uploads/images/${req.body.filename}.${req.body.extension}': `uploads/images/${req.body.filename}.${req.body.extension}`,
+					});
+					reject(err, err.stack); // an error occurred
+				}
+				else {
+					imageLabels = data;
+					resolve();
+				}           // successful response
+			});
+		});
+	};
+
+	let explicitLabelsPromise = function() {
+		return new Promise(function(resolve, reject) {
+			
+			console.log('starting explicitLabelsPromise');
+			var rekognition = new AWS.Rekognition();
+			var explicitLabelParams = {
+				Image: {
+					S3Object: {
+						'Bucket': bucketName, 
+						'Name': `uploads/images/${req.body.filename}.${req.body.extension}`,
+					}
+				}, 
+			};
+			rekognition.detectModerationLabels(explicitLabelParams, function(err, data) {
+				if (err) reject(err, err.stack); // an error occurred
+				else {
+					explicitImageLabels = data;
+					resolve();
+				}
+			});
+		});
+	};
+
+	let renderPromise = function() {
+		return new Promise(function(resolve, reject) {
+			console.log('starting render');
+			jsondata['labels'] = imageLabels;
+			jsondata['explicitImageLabels'] = explicitImageLabels;
+			res.json({file: `public/${req.body.filename}.${req.body.extension}`, data: jsondata});
+			resolve();
+		});
+	};
+
 	
+	listItemsPromise().then(function(result) {
+		return uploadPromise(result);
+	}).then(function(result) {
+		return listItemsPromise(result);
+	}).then(function(result) {
+		return labelsPromise(result);
+		// return labelsPromise(result);
+	}).then(function(result) {
+		return explicitLabelsPromise(result);
+	}).then(function(result) {
+		return renderPromise(result);
+	});
 
 
 });
@@ -118,8 +204,8 @@ app.use(function(err, req, res, next) {
 	res.render('error');
 });
 
-app.listen(8000, () => {
+var server = app.listen(8000, () => {
 	console.log('8000');
 });
-
+server.timeout = 10000;
 module.exports = app;

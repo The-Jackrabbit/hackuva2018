@@ -1,4 +1,5 @@
 import React from 'react';
+import Home from './scenes/home/home';
 
 class Main extends React.Component {
 	constructor(props) {
@@ -28,26 +29,35 @@ class Main extends React.Component {
 			body: data,
 		}).then((response) => {
 			response.json().then((body) => {
-				this.setState({ imageURL: `http://localhost:8000/${body.file}` });
+				console.log({data: body.data });
+				let isHotdog;
+				if (body.data.labels) {
+					let labels = body.data.labels.Labels;
+					
+					isHotdog = this.isHotdog(labels);
+				}
+				this.setState({ 
+					imageURL: `http://localhost:8000/${body.file}`,
+					isHotdog: isHotdog,
+				});
 			});
 		});
 	}
 
+	isHotdog(labels) {
+
+		for (let key in labels) {
+			let label = labels[key];
+			if (label.Name == 'Hot Dog') {
+				return true;
+			}
+		}
+		return false;
+	}
+
 	render() {
 		return (
-			<form onSubmit={this.handleUploadImage}>
-				<div>
-					<input ref={(ref) => { this.uploadInput = ref; }} type="file" />
-				</div>
-				<div>
-					<input ref={(ref) => { this.fileName = ref; }} type="text" placeholder="Enter the desired name of file" />
-				</div>
-				<br />
-				<div>
-					<button>Upload</button>
-				</div>
-				<img src={this.state.imageURL} alt="img" />
-			</form>
+			<Home></Home>
 		);
 	}
 }

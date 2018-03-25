@@ -1,0 +1,32 @@
+{'faces': 
+	{'FaceDetails': [
+		{'BoundingBox': {
+			'Width': 0.19645822048187256, 
+			'Height': 0.30174246430397034,
+			 'Left': 0.06917542964220047, 
+			 'Top': 0.16574585437774658
+		},
+		 'Landmarks': [
+			 {
+				 'Type':'eyeLeft', 
+				 'X': 0.14990009367465973, 
+				 'Y': 0.2790256440639496
+			}, 
+			{
+				'Type': 'eyeRight', 
+				'X': 0.1724606603384018, 
+				'Y': 0.29195037484169006
+			}, {
+				'Type': 'nose', 
+				'X': 0.14373178780078888, 
+				'Y': 0.35555747151374817
+			}, {
+				'Type': 'mouthLeft', 
+				'X': 0.1577835977077484,
+				'Y': 0.3927329480648041
+			},{
+				'Type': 'mouthRight', 
+				'X': 0.18228210508823395, 
+				'Y': 0.394535630941391
+			}
+		], 'Pose': {'Roll': 15.231480598449707, 'Yaw': -66.49899291992188, 'Pitch': -18.004667282104492}, 'Quality': {'Brightness': 40.71564865112305, 'Sharpness': 98.55191040039062}, 'Confidence': 99.76658630371094}], 'OrientationCorrection': 'ROTATE_0', 'ResponseMetadata': {'RequestId': '8b7236dc-2fee-11e8-b31c-65ce57da8e24', 'HTTPStatusCode': 200, 'HTTPHeaders': {'content-type': 'application/x-amz-json-1.1', 'date': 'Sun, 25 Mar 2018 05:37:02 GMT', 'x-amzn-requestid': '8b7236dc-2fee-11e8-b31c-65ce57da8e24', 'content-length': '718', 'connection': 'keep-alive'}, 'RetryAttempts':0}}, 'labels': {'Human': '99.30611419677734', 'People': '99.30611419677734', 'Person': '99.30611419677734', 'Kiss': '72.63211059570312', 'Kissing': '72.63211059570312', 'Make Out': '68.46527099609375', 'Party': '56.844581604003906', 'Child': '51.46922302246094', 'Kid': '51.46922302246094', 'Crowd': '51.39521408081055', 'Clothing': '50.97113800048828', 'Dress': '50.97113800048828'}}

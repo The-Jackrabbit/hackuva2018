@@ -11,8 +11,6 @@ class Home extends Component {
 		return (
 			<div>
 				<SplashScreen></SplashScreen>
-				<LoadingScreen></LoadingScreen>
-				<ResultScreen></ResultScreen>
 			</div>
 		);
 	}
