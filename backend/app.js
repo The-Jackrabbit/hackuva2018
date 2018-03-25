@@ -1,3 +1,5 @@
+const fs = require('file-system');
+
 const express = require('express');
 const path = require('path');
 const logger = require('morgan');
@@ -7,7 +9,12 @@ const fileUpload = require('express-fileupload');
 const cors = require('cors');
 
 const app = express();
+var base64Img = require('base64-img');
 
+const AWS = require('aws-sdk');
+AWS.config.loadFromPath('./config.json');
+var s3 = new AWS.S3();
+var Upload = require('s3-uploader');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -22,18 +29,74 @@ app.use(cookieParser());
 app.use(fileUpload());
 app.use('/public', express.static(__dirname + '/public'));
 
+var client = new Upload('codedgaze', {
+	aws: {
+	  path: 'images/',
+	  region: 'us-east-1',
+	  acl: 'public-read'
+	},
+  
+	cleanup: {
+	  versions: true,
+	  original: false
+	},
+  
+	original: {
+	  awsImageAcl: 'private'
+	},
+  
+});
+
 
 app.post('/upload', (req, res, next) => {
-	console.log(req);
+	// console.log(req);
+	console.log('hello from node!');
+	/*const { spawn } = require('child_process');
+	const pyProg = spawn('python',['./test.py']);
+	
+	pyProg.stdout.on('data', function(data) {
+
+		console.log(data.toString());
+
+	});*/
+
 	let imageFile = req.files.file;
-
-	imageFile.mv(`${__dirname}/public/${req.body.filename}.jpg`, function(err) {
-		if (err) {
-			return res.status(500).send(err);
+	console.log('imageFile');
+	var params = {
+		Bucket: 'codedgaze',
+		Key: req.body.filename,
+		Body: 'data',
+		ACL:'public-read'
+	};
+	console.log('params');
+	// var data = base64Img.base64Sync(`./public/${req.body.filename}.${req.body.extension}`);
+	/*var s3 = new AWS.S3();
+	
+	s3.client.putObject(params, function(err, params){
+		if (err) { 
+			console.log('Error uploading data: ', err); 
+		} else {
+			//console.log('succesfully uploaded the image!');
 		}
-
-		res.json({file: `public/${req.body.filename}.jpg`});
+	});*/
+	console.log('goodbye from node!');
+	imageFile.mv(`${__dirname}/public/${req.body.filename}.${req.body.extension}`, function(err) {
+		if (err) {
+			// return JSON.stringify(res.status(500).send(err));
+		}
+		res.json({file: `public/${req.body.filename}.${req.body.extension}`});
 	});
+	/*
+	client.upload(`./public/${req.body.filename}.${req.body.extension}`, {}, function(err, versions, meta) {
+		if (err) { throw err; }
+	  
+		versions.forEach(function(image) {
+		  console.log(image.width, image.height, image.url);
+		  // 1024 760 https://my-bucket.s3.amazonaws.com/path/110ec58a-a0f2-4ac4-8393-c866d813b8d1.jpg 
+		});
+	});*/
+	
+
 
 });
 

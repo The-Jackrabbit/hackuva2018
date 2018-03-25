@@ -15,8 +15,13 @@ class Main extends React.Component {
 		ev.preventDefault();
 
 		const data = new FormData();
+		const filename = this.uploadInput.files[0].name;
+		let extension = filename.split('.');
+		extension = extension[extension.length - 1];
 		data.append('file', this.uploadInput.files[0]);
+		console.log(this.uploadInput.files[0]);
 		data.append('filename', this.fileName.value);
+		data.append('extension', extension);
 
 		fetch('http://localhost:8000/upload', {
 			method: 'POST',
