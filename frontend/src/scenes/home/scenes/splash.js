@@ -20,8 +20,8 @@ class SplashScreen extends Component {
 			loading: false,
 			labelData: [],
 			explicitLabelData: [],
-			partColors: ['#0A2463', '#2176FF', '#33A1FD', '#3E92CC', '#134074', '#011638', '#78C0E0'],
-			albumColors: ['#F9CB40', '#FFA737', '#FF6A00', '#FDCA40'],
+			partColors: ['#FFEF7D', '#E53535', '#33A1FD', '#3E92CC', '#134074', '#011638', '#78C0E0'],
+			albumColors: ['#FFEF7D', '#E53535', '#FF6A00', '#FDCA40'],
 		};
 
 		this.onChange = this.onChange.bind(this);
@@ -35,7 +35,8 @@ class SplashScreen extends Component {
 			touched: false,
 			labelData: [],
 			explicitLabelData: [],
-			touched: false,
+			loading: false,
+
 		});
 	}
 
@@ -128,7 +129,7 @@ class SplashScreen extends Component {
 
 		for (let key in labels) {
 			let label = labels[key];
-			if (label.Name == 'Hot Dog' && label.Confidence > 75) {
+			if (label.Name == 'Hot Dog' && label.Confidence > 40) {
 				return true;
 			}
 		}
@@ -187,12 +188,12 @@ class SplashScreen extends Component {
 									}
 									{
 										this.state.isHotdog && this.state.touched &&
-											<h3>Hotdog</h3>
+											<p className="hotdog">Hotdog</p>
 											
 									}
 									{
 										(!this.state.isHotdog && this.state.touched &&
-											<h3>Not Hotdog</h3>)
+											<p className="not-hotdog">Not Hotdog</p>)
 									}
 									<div>
 										{

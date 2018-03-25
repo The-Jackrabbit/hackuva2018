@@ -7,7 +7,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const fileUpload = require('express-fileupload');
 const cors = require('cors');
-
+const {bucketName, region, accessKeyId, secretAccessKey } = require('./api_key.js');
 const app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -42,11 +42,6 @@ app.post('/upload', (req, res, next) => {
 		'req.body.filename': req.body.filename,
 		'req.body.extension': req.body.extension,
 	});
-
-	const bucketName = 'rekog-bucket-hackuva2018';
-	const secretAccessKey = 'tbaVf9OnTLiISEzVFuGPTUBt5+NIGyvV/5vrG8Qp';
-	const accessKeyId = 'AKIAJHQVKO44SJVGALWQ';
-	const region = 'us-east-1';
 
 	var AWS = require('aws-sdk');
 

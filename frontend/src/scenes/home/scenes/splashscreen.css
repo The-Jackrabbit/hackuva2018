@@ -94,13 +94,12 @@ input[type="file"] {
 	
 }
 .file-submit-box .submit  input {
-	background-color: #70A6ED;
+	background-color: #9CD2EF;
 	color: white;
 	margin-bottom: 0pt;
 	border: 1px solid #ccc;
 	border: none;
 	border-radius: 4pt;
-	background-color: #70A6ED;
 	color: white;
 	display: inline-block;
 	padding: 12pt 16pt;
@@ -144,6 +143,21 @@ input[type="file"] {
 	grid-area: fileSelect;
 	align-self: center;
 	padding: 6pt;
+}
+
+p.hotdog , p.not-hotdog {
+	font-size: 72pt;
+	text-align: center;
+	margin: 0pt;
+	padding: 0pt;
+}
+
+p.not-hotdog {
+	color: #E53535 !important;
+}
+
+p.hotdog {
+	color: #C1FF82 !important;
 }
 
 
