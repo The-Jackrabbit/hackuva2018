@@ -1,0 +1,14 @@
+models:
+    image: tp33/django
+    external_links:
+      -  mysql:db
+    volumes:
+      - ./app/uvaPR_Microservices:/app
+    ports:
+      - "8001:8000"
+    command: >
+            bash -c "cd ./uvaPR_Microservices
+            && pip install --upgrade -r requirements.txt
+            && python manage.py makemigrations
+            && python manage.py migrate
+            && mod_wsgi-express start-server --reload-on-changes /app/uvaPR_Microservices/uvaPR_Microservices/wsgi.py"

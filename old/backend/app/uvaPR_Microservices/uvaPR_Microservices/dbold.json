@@ -1,0 +1,2140 @@
+[
+	{
+		 "model": "contenttypes.contenttype",
+		 "fields": {
+			  "app_label": "admin",
+			  "model": "logentry"
+		 }
+	},
+	{
+		 "model": "contenttypes.contenttype",
+		 "fields": {
+			  "app_label": "auth",
+			  "model": "permission"
+		 }
+	},
+	{
+		 "model": "contenttypes.contenttype",
+		 "fields": {
+			  "app_label": "auth",
+			  "model": "group"
+		 }
+	},
+	{
+		 "model": "contenttypes.contenttype",
+		 "fields": {
+			  "app_label": "auth",
+			  "model": "user"
+		 }
+	},
+	{
+		 "model": "contenttypes.contenttype",
+		 "fields": {
+			  "app_label": "contenttypes",
+			  "model": "contenttype"
+		 }
+	},
+	{
+		 "model": "contenttypes.contenttype",
+		 "fields": {
+			  "app_label": "sessions",
+			  "model": "session"
+		 }
+	},
+	{
+		 "model": "contenttypes.contenttype",
+		 "fields": {
+			  "app_label": "mainApp",
+			  "model": "user"
+		 }
+	},
+	{
+		 "model": "contenttypes.contenttype",
+		 "fields": {
+			  "app_label": "mainApp",
+			  "model": "season"
+		 }
+	},
+	{
+		 "model": "contenttypes.contenttype",
+		 "fields": {
+			  "app_label": "mainApp",
+			  "model": "tournament"
+		 }
+	},
+	{
+		 "model": "contenttypes.contenttype",
+		 "fields": {
+			  "app_label": "mainApp",
+			  "model": "set"
+		 }
+	},
+	{
+		 "model": "contenttypes.contenttype",
+		 "fields": {
+			  "app_label": "mainApp",
+			  "model": "game"
+		 }
+	},
+	{
+		 "model": "contenttypes.contenttype",
+		 "fields": {
+			  "app_label": "mainApp",
+			  "model": "powerrank"
+		 }
+	},
+	{
+		 "model": "contenttypes.contenttype",
+		 "fields": {
+			  "app_label": "mainApp",
+			  "model": "powerranktousers"
+		 }
+	},
+	{
+		 "model": "contenttypes.contenttype",
+		 "fields": {
+			  "app_label": "mainApp",
+			  "model": "badge"
+		 }
+	},
+	{
+		 "model": "contenttypes.contenttype",
+		 "fields": {
+			  "app_label": "mainApp",
+			  "model": "badgestousers"
+		 }
+	},
+	{
+		 "model": "contenttypes.contenttype",
+		 "fields": {
+			  "app_label": "mainApp",
+			  "model": "usertags"
+		 }
+	},
+	{
+		 "model": "contenttypes.contenttype",
+		 "fields": {
+			  "app_label": "mainApp",
+			  "model": "tournamenttousers"
+		 }
+	},
+	{
+		 "model": "sessions.session",
+		 "pk": "wuc0txa1nu0592ct60jvlh7ftocm8r4p",
+		 "fields": {
+			  "session_data": "Nzc4MWQyYTQ0OGI3ZmQyYzNlODJmODc2MmQ5YWY4ZjY5MGU1NjUzNDp7Il9hdXRoX3VzZXJfaGFzaCI6ImQ4ZGIzNjA3YmJlMTBhYTlhZmM4OTdjYTkyN2I0MmM5MmUxOTVmNGIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+			  "expire_date": "2018-02-28T00:09:58.109Z"
+		 }
+	},
+	{
+		 "model": "mainApp.user",
+		 "pk": 1,
+		 "fields": {
+			  "real_name": "Luke Masters",
+			  "tag": "kirbySux",
+			  "profile_picture": "",
+			  "join_date": "2018-02-14T00:10:42Z"
+		 }
+	},
+	{
+		 "model": "mainApp.user",
+		 "pk": 2,
+		 "fields": {
+			  "real_name": "Mac Sochor",
+			  "tag": "falcOP",
+			  "profile_picture": "",
+			  "join_date": "2018-02-14T00:11:08Z"
+		 }
+	},
+	{
+		 "model": "mainApp.user",
+		 "pk": 3,
+		 "fields": {
+			  "real_name": "James Meka",
+			  "tag": "theGoon",
+			  "profile_picture": "",
+			  "join_date": "2018-02-14T01:18:38Z"
+		 }
+	},
+	{
+		 "model": "mainApp.user",
+		 "pk": 4,
+		 "fields": {
+			  "real_name": "Kian Lawlor",
+			  "tag": "linkSux",
+			  "profile_picture": "",
+			  "join_date": "2018-02-14T01:18:54Z"
+		 }
+	},
+	{
+		 "model": "mainApp.user",
+		 "pk": 22,
+		 "fields": {
+			  "real_name": "Sarah Bland",
+			  "tag": "sbizzy",
+			  "profile_picture": "",
+			  "join_date": "2018-02-14T00:11:08Z"
+		 }
+	},
+	{
+		 "model": "mainApp.season",
+		 "pk": 1,
+		 "fields": {
+			  "name": "Spring 2018",
+			  "start_date": "2018-01-01T00:11:37Z",
+			  "end_date": "2018-05-24T00:11:38Z"
+		 }
+	},
+	{
+		 "model": "mainApp.season",
+		 "pk": 2,
+		 "fields": {
+			  "name": "Fall 2017",
+			  "start_date": "2017-08-15T01:15:21Z",
+			  "end_date": "2017-12-20T01:15:28Z"
+		 }
+	},
+	{
+		 "model": "mainApp.season",
+		 "pk": 3,
+		 "fields": {
+			  "name": "Spring 2017",
+			  "start_date": "2017-01-01T12:00:00Z",
+			  "end_date": "2017-05-31T12:00:00Z"
+		 }
+	},
+	{
+		 "model": "mainApp.tournament",
+		 "pk": 1,
+		 "fields": {
+			  "date": "2018-01-24T00:11:23Z",
+			  "name": "Spring 2018 Open",
+			  "season": 1
+		 }
+	},
+	{
+		 "model": "mainApp.tournament",
+		 "pk": 2,
+		 "fields": {
+			  "date": "2018-02-14T01:14:31Z",
+			  "name": "Spring 2018 Qualifiers",
+			  "season": 1
+		 }
+	},
+	{
+		 "model": "mainApp.tournament",
+		 "pk": 3,
+		 "fields": {
+			  "date": "2017-12-10T01:15:46Z",
+			  "name": "Fall 2017 Finals",
+			  "season": 2
+		 }
+	},
+	{
+		 "model": "mainApp.tournament",
+		 "pk": 4,
+		 "fields": {
+			  "date": "2017-12-10T01:15:46Z",
+			  "name": "Fall 2017 Final Tournament",
+			  "season": 2
+		 }
+	},
+	{
+		 "model": "mainApp.usertags",
+		 "pk": 1,
+		 "fields": {
+			  "user": 1,
+			  "tournament": 1,
+			  "tag": "hyrulezHero"
+		 }
+	},
+	{
+		 "model": "mainApp.usertags",
+		 "pk": 2,
+		 "fields": {
+			  "user": 1,
+			  "tournament": 3,
+			  "tag": "chosenUndead"
+		 }
+	},
+	{
+		 "model": "mainApp.usertags",
+		 "pk": 3,
+		 "fields": {
+			  "user": 1,
+			  "tournament": 2,
+			  "tag": "hyrulezHero"
+		 }
+	},
+	{
+		 "model": "mainApp.usertags",
+		 "pk": 4,
+		 "fields": {
+			  "user": 2,
+			  "tournament": 1,
+			  "tag": "downB"
+		 }
+	},
+	{
+		 "model": "mainApp.tournamenttousers",
+		 "pk": 1,
+		 "fields": {
+			  "tournament": 1,
+			  "user": 1
+		 }
+	},
+	{
+		 "model": "mainApp.tournamenttousers",
+		 "pk": 2,
+		 "fields": {
+			  "tournament": 1,
+			  "user": 2
+		 }
+	},
+	{
+		 "model": "mainApp.tournamenttousers",
+		 "pk": 3,
+		 "fields": {
+			  "tournament": 1,
+			  "user": 3
+		 }
+	},
+	{
+		 "model": "mainApp.tournamenttousers",
+		 "pk": 4,
+		 "fields": {
+			  "tournament": 1,
+			  "user": 4
+		 }
+	},
+	{
+		 "model": "mainApp.set",
+		 "pk": 1,
+		 "fields": {
+			  "victor": 2,
+			  "tournament": 1,
+			  "child_set": 3,
+			  "player_one": 1,
+			  "player_two": 2
+		 }
+	},
+	{
+		 "model": "mainApp.set",
+		 "pk": 2,
+		 "fields": {
+			  "victor": 4,
+			  "tournament": 1,
+			  "child_set": 3,
+			  "player_one": 4,
+			  "player_two": 3
+		 }
+	},
+	{
+		 "model": "mainApp.set",
+		 "pk": 3,
+		 "fields": {
+			  "victor": 2,
+			  "tournament": 1,
+			  "child_set": null,
+			  "player_one": 2,
+			  "player_two": 4
+		 }
+	},
+	{
+		 "model": "mainApp.set",
+		 "pk": 4,
+		 "fields": {
+			  "victor": 4,
+			  "tournament": 1,
+			  "child_set": 3,
+			  "player_one": 2,
+			  "player_two": 3
+		 }
+	},
+	{
+		 "model": "mainApp.game",
+		 "pk": 1,
+		 "fields": {
+			  "victor": 0,
+			  "set": 1,
+			  "round_number": 1
+		 }
+	},
+	{
+		 "model": "mainApp.game",
+		 "pk": 2,
+		 "fields": {
+			  "victor": 1,
+			  "set": 1,
+			  "round_number": 2
+		 }
+	},
+	{
+		 "model": "mainApp.game",
+		 "pk": 3,
+		 "fields": {
+			  "victor": 1,
+			  "set": 1,
+			  "round_number": 3
+		 }
+	},
+	{
+		 "model": "mainApp.game",
+		 "pk": 4,
+		 "fields": {
+			  "victor": 0,
+			  "set": 2,
+			  "round_number": 1
+		 }
+	},
+	{
+		 "model": "mainApp.game",
+		 "pk": 5,
+		 "fields": {
+			  "victor": 0,
+			  "set": 2,
+			  "round_number": 2
+		 }
+	},
+	{
+		 "model": "mainApp.game",
+		 "pk": 6,
+		 "fields": {
+			  "victor": 0,
+			  "set": 3,
+			  "round_number": 1
+		 }
+	},
+	{
+		 "model": "mainApp.game",
+		 "pk": 7,
+		 "fields": {
+			  "victor": 1,
+			  "set": 3,
+			  "round_number": 2
+		 }
+	},
+	{
+		 "model": "mainApp.game",
+		 "pk": 8,
+		 "fields": {
+			  "victor": 0,
+			  "set": 3,
+			  "round_number": 3
+		 }
+	},
+	{
+		 "model": "mainApp.powerrank",
+		 "pk": 1,
+		 "fields": {
+			  "season": 1,
+			  "name": "Spring 2018 Power Rank"
+		 }
+	},
+	{
+		 "model": "mainApp.powerranktousers",
+		 "pk": 1,
+		 "fields": {
+			  "powerrank": 1,
+			  "user": 2,
+			  "rank": 1
+		 }
+	},
+	{
+		 "model": "mainApp.powerranktousers",
+		 "pk": 2,
+		 "fields": {
+			  "powerrank": 1,
+			  "user": 4,
+			  "rank": 2
+		 }
+	},
+	{
+		 "model": "mainApp.powerranktousers",
+		 "pk": 3,
+		 "fields": {
+			  "powerrank": 1,
+			  "user": 1,
+			  "rank": 3
+		 }
+	},
+	{
+		 "model": "mainApp.badge",
+		 "pk": 1,
+		 "fields": {
+			  "name": "PR #1 For Season",
+			  "badge_image": "",
+			  "points": 200
+		 }
+	},
+	{
+		 "model": "mainApp.badge",
+		 "pk": 2,
+		 "fields": {
+			  "name": "PR #2 For Season",
+			  "badge_image": "",
+			  "points": 150
+		 }
+	},
+	{
+		 "model": "mainApp.badge",
+		 "pk": 3,
+		 "fields": {
+			  "name": "PR #3 For Season",
+			  "badge_image": "",
+			  "points": 100
+		 }
+	},
+	{
+		 "model": "mainApp.badge",
+		 "pk": 4,
+		 "fields": {
+			  "name": "Account Created!",
+			  "badge_image": "",
+			  "points": 0
+		 }
+	},
+	{
+		 "model": "mainApp.badgestousers",
+		 "pk": 1,
+		 "fields": {
+			  "badge": 1,
+			  "user": 2
+		 }
+	},
+	{
+		 "model": "mainApp.badgestousers",
+		 "pk": 2,
+		 "fields": {
+			  "badge": 4,
+			  "user": 2
+		 }
+	},
+	{
+		 "model": "mainApp.badgestousers",
+		 "pk": 3,
+		 "fields": {
+			  "badge": 2,
+			  "user": 4
+		 }
+	},
+	{
+		 "model": "mainApp.badgestousers",
+		 "pk": 4,
+		 "fields": {
+			  "badge": 4,
+			  "user": 4
+		 }
+	},
+	{
+		 "model": "mainApp.badgestousers",
+		 "pk": 5,
+		 "fields": {
+			  "badge": 3,
+			  "user": 1
+		 }
+	},
+	{
+		 "model": "mainApp.badgestousers",
+		 "pk": 6,
+		 "fields": {
+			  "badge": 4,
+			  "user": 1
+		 }
+	},
+	{
+		 "model": "mainApp.badgestousers",
+		 "pk": 7,
+		 "fields": {
+			  "badge": 4,
+			  "user": 3
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can add log entry",
+			  "content_type": [
+					"admin",
+					"logentry"
+			  ],
+			  "codename": "add_logentry"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can change log entry",
+			  "content_type": [
+					"admin",
+					"logentry"
+			  ],
+			  "codename": "change_logentry"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can delete log entry",
+			  "content_type": [
+					"admin",
+					"logentry"
+			  ],
+			  "codename": "delete_logentry"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can add permission",
+			  "content_type": [
+					"auth",
+					"permission"
+			  ],
+			  "codename": "add_permission"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can change permission",
+			  "content_type": [
+					"auth",
+					"permission"
+			  ],
+			  "codename": "change_permission"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can delete permission",
+			  "content_type": [
+					"auth",
+					"permission"
+			  ],
+			  "codename": "delete_permission"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can add group",
+			  "content_type": [
+					"auth",
+					"group"
+			  ],
+			  "codename": "add_group"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can change group",
+			  "content_type": [
+					"auth",
+					"group"
+			  ],
+			  "codename": "change_group"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can delete group",
+			  "content_type": [
+					"auth",
+					"group"
+			  ],
+			  "codename": "delete_group"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can add user",
+			  "content_type": [
+					"auth",
+					"user"
+			  ],
+			  "codename": "add_user"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can change user",
+			  "content_type": [
+					"auth",
+					"user"
+			  ],
+			  "codename": "change_user"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can delete user",
+			  "content_type": [
+					"auth",
+					"user"
+			  ],
+			  "codename": "delete_user"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can add content type",
+			  "content_type": [
+					"contenttypes",
+					"contenttype"
+			  ],
+			  "codename": "add_contenttype"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can change content type",
+			  "content_type": [
+					"contenttypes",
+					"contenttype"
+			  ],
+			  "codename": "change_contenttype"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can delete content type",
+			  "content_type": [
+					"contenttypes",
+					"contenttype"
+			  ],
+			  "codename": "delete_contenttype"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can add session",
+			  "content_type": [
+					"sessions",
+					"session"
+			  ],
+			  "codename": "add_session"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can change session",
+			  "content_type": [
+					"sessions",
+					"session"
+			  ],
+			  "codename": "change_session"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can delete session",
+			  "content_type": [
+					"sessions",
+					"session"
+			  ],
+			  "codename": "delete_session"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can add user",
+			  "content_type": [
+					"mainApp",
+					"user"
+			  ],
+			  "codename": "add_user"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can change user",
+			  "content_type": [
+					"mainApp",
+					"user"
+			  ],
+			  "codename": "change_user"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can delete user",
+			  "content_type": [
+					"mainApp",
+					"user"
+			  ],
+			  "codename": "delete_user"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can add season",
+			  "content_type": [
+					"mainApp",
+					"season"
+			  ],
+			  "codename": "add_season"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can change season",
+			  "content_type": [
+					"mainApp",
+					"season"
+			  ],
+			  "codename": "change_season"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can delete season",
+			  "content_type": [
+					"mainApp",
+					"season"
+			  ],
+			  "codename": "delete_season"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can add tournament",
+			  "content_type": [
+					"mainApp",
+					"tournament"
+			  ],
+			  "codename": "add_tournament"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can change tournament",
+			  "content_type": [
+					"mainApp",
+					"tournament"
+			  ],
+			  "codename": "change_tournament"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can delete tournament",
+			  "content_type": [
+					"mainApp",
+					"tournament"
+			  ],
+			  "codename": "delete_tournament"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can add set",
+			  "content_type": [
+					"mainApp",
+					"set"
+			  ],
+			  "codename": "add_set"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can change set",
+			  "content_type": [
+					"mainApp",
+					"set"
+			  ],
+			  "codename": "change_set"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can delete set",
+			  "content_type": [
+					"mainApp",
+					"set"
+			  ],
+			  "codename": "delete_set"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can add game",
+			  "content_type": [
+					"mainApp",
+					"game"
+			  ],
+			  "codename": "add_game"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can change game",
+			  "content_type": [
+					"mainApp",
+					"game"
+			  ],
+			  "codename": "change_game"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can delete game",
+			  "content_type": [
+					"mainApp",
+					"game"
+			  ],
+			  "codename": "delete_game"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can add power rank",
+			  "content_type": [
+					"mainApp",
+					"powerrank"
+			  ],
+			  "codename": "add_powerrank"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can change power rank",
+			  "content_type": [
+					"mainApp",
+					"powerrank"
+			  ],
+			  "codename": "change_powerrank"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can delete power rank",
+			  "content_type": [
+					"mainApp",
+					"powerrank"
+			  ],
+			  "codename": "delete_powerrank"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can add power rank to users",
+			  "content_type": [
+					"mainApp",
+					"powerranktousers"
+			  ],
+			  "codename": "add_powerranktousers"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can change power rank to users",
+			  "content_type": [
+					"mainApp",
+					"powerranktousers"
+			  ],
+			  "codename": "change_powerranktousers"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can delete power rank to users",
+			  "content_type": [
+					"mainApp",
+					"powerranktousers"
+			  ],
+			  "codename": "delete_powerranktousers"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can add badge",
+			  "content_type": [
+					"mainApp",
+					"badge"
+			  ],
+			  "codename": "add_badge"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can change badge",
+			  "content_type": [
+					"mainApp",
+					"badge"
+			  ],
+			  "codename": "change_badge"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can delete badge",
+			  "content_type": [
+					"mainApp",
+					"badge"
+			  ],
+			  "codename": "delete_badge"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can add badges to users",
+			  "content_type": [
+					"mainApp",
+					"badgestousers"
+			  ],
+			  "codename": "add_badgestousers"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can change badges to users",
+			  "content_type": [
+					"mainApp",
+					"badgestousers"
+			  ],
+			  "codename": "change_badgestousers"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can delete badges to users",
+			  "content_type": [
+					"mainApp",
+					"badgestousers"
+			  ],
+			  "codename": "delete_badgestousers"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can add user tags",
+			  "content_type": [
+					"mainApp",
+					"usertags"
+			  ],
+			  "codename": "add_usertags"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can change user tags",
+			  "content_type": [
+					"mainApp",
+					"usertags"
+			  ],
+			  "codename": "change_usertags"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can delete user tags",
+			  "content_type": [
+					"mainApp",
+					"usertags"
+			  ],
+			  "codename": "delete_usertags"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can add tournament to users",
+			  "content_type": [
+					"mainApp",
+					"tournamenttousers"
+			  ],
+			  "codename": "add_tournamenttousers"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can change tournament to users",
+			  "content_type": [
+					"mainApp",
+					"tournamenttousers"
+			  ],
+			  "codename": "change_tournamenttousers"
+		 }
+	},
+	{
+		 "model": "auth.permission",
+		 "fields": {
+			  "name": "Can delete tournament to users",
+			  "content_type": [
+					"mainApp",
+					"tournamenttousers"
+			  ],
+			  "codename": "delete_tournamenttousers"
+		 }
+	},
+	{
+		 "model": "auth.user",
+		 "fields": {
+			  "password": "pbkdf2_sha256$30000$yN8D9elYsOel$ypyN32DtsPPbHUuowpwI5TIdJmwAZYXHAjtEwoQ22Ls=",
+			  "last_login": "2018-02-14T00:09:58.106Z",
+			  "is_superuser": true,
+			  "username": "admin",
+			  "first_name": "",
+			  "last_name": "",
+			  "email": "",
+			  "is_staff": true,
+			  "is_active": true,
+			  "date_joined": "2018-02-14T00:09:46.928Z",
+			  "groups": [],
+			  "user_permissions": []
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 1,
+		 "fields": {
+			  "action_time": "2018-02-14T00:10:45.327Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"user"
+			  ],
+			  "object_id": "1",
+			  "object_repr": "Luke Masters",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 2,
+		 "fields": {
+			  "action_time": "2018-02-14T00:11:11.049Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"user"
+			  ],
+			  "object_id": "2",
+			  "object_repr": "Mac Sochor",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 3,
+		 "fields": {
+			  "action_time": "2018-02-14T00:11:44.822Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"season"
+			  ],
+			  "object_id": "1",
+			  "object_repr": "Spring 2018",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 4,
+		 "fields": {
+			  "action_time": "2018-02-14T00:11:48.906Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"tournament"
+			  ],
+			  "object_id": "1",
+			  "object_repr": "Spring 2018 Open",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 5,
+		 "fields": {
+			  "action_time": "2018-02-14T00:12:33.681Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"set"
+			  ],
+			  "object_id": "1",
+			  "object_repr": "kirbySux vs. falcOP",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 6,
+		 "fields": {
+			  "action_time": "2018-02-14T00:12:39.300Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"set"
+			  ],
+			  "object_id": "1",
+			  "object_repr": "kirbySux vs. falcOP",
+			  "action_flag": 2,
+			  "change_message": "[]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 7,
+		 "fields": {
+			  "action_time": "2018-02-14T00:12:57.861Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"game"
+			  ],
+			  "object_id": "1",
+			  "object_repr": "Game object",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 8,
+		 "fields": {
+			  "action_time": "2018-02-14T00:13:08.930Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"game"
+			  ],
+			  "object_id": "2",
+			  "object_repr": "Game object",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 9,
+		 "fields": {
+			  "action_time": "2018-02-14T00:13:18.122Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"game"
+			  ],
+			  "object_id": "3",
+			  "object_repr": "Game object",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 10,
+		 "fields": {
+			  "action_time": "2018-02-14T00:19:40.517Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"game"
+			  ],
+			  "object_id": "1",
+			  "object_repr": "kirbySux vs. falcOP Round 1",
+			  "action_flag": 2,
+			  "change_message": "[]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 11,
+		 "fields": {
+			  "action_time": "2018-02-14T01:13:37.676Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"usertags"
+			  ],
+			  "object_id": "1",
+			  "object_repr": "UserTags object",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 12,
+		 "fields": {
+			  "action_time": "2018-02-14T01:14:46.173Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"tournament"
+			  ],
+			  "object_id": "2",
+			  "object_repr": "Spring 2018 Qualifiers",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 13,
+		 "fields": {
+			  "action_time": "2018-02-14T01:14:57.327Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"tournament"
+			  ],
+			  "object_id": "1",
+			  "object_repr": "Spring 2018 Open",
+			  "action_flag": 2,
+			  "change_message": "[{\"changed\": {\"fields\": [\"date\"]}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 14,
+		 "fields": {
+			  "action_time": "2018-02-14T01:15:34.698Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"season"
+			  ],
+			  "object_id": "2",
+			  "object_repr": "Fall 2017",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 15,
+		 "fields": {
+			  "action_time": "2018-02-14T01:16:00.329Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"tournament"
+			  ],
+			  "object_id": "3",
+			  "object_repr": "Fall 2017 Finals",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 16,
+		 "fields": {
+			  "action_time": "2018-02-14T01:16:25.820Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"usertags"
+			  ],
+			  "object_id": "2",
+			  "object_repr": "chosenUndead",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 17,
+		 "fields": {
+			  "action_time": "2018-02-14T01:17:05.116Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"usertags"
+			  ],
+			  "object_id": "3",
+			  "object_repr": "hyrulezHero",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 18,
+		 "fields": {
+			  "action_time": "2018-02-14T01:17:09.518Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"usertags"
+			  ],
+			  "object_id": "1",
+			  "object_repr": "hyrulezHero",
+			  "action_flag": 2,
+			  "change_message": "[]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 19,
+		 "fields": {
+			  "action_time": "2018-02-14T01:17:51.254Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"usertags"
+			  ],
+			  "object_id": "4",
+			  "object_repr": "downB",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 20,
+		 "fields": {
+			  "action_time": "2018-02-14T01:18:43.550Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"user"
+			  ],
+			  "object_id": "3",
+			  "object_repr": "James Meka",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 21,
+		 "fields": {
+			  "action_time": "2018-02-14T01:18:59.921Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"user"
+			  ],
+			  "object_id": "4",
+			  "object_repr": "Kian Lawlor",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 22,
+		 "fields": {
+			  "action_time": "2018-02-14T01:19:58.857Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"set"
+			  ],
+			  "object_id": "2",
+			  "object_repr": "linkSux vs. theGoon",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 23,
+		 "fields": {
+			  "action_time": "2018-02-14T01:20:17.312Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"set"
+			  ],
+			  "object_id": "2",
+			  "object_repr": "linkSux vs. theGoon",
+			  "action_flag": 2,
+			  "change_message": "[]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 24,
+		 "fields": {
+			  "action_time": "2018-02-14T01:20:51.548Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"set"
+			  ],
+			  "object_id": "3",
+			  "object_repr": "falcOP vs. linkSux",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 25,
+		 "fields": {
+			  "action_time": "2018-02-14T01:21:45.118Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"set"
+			  ],
+			  "object_id": "2",
+			  "object_repr": "Kian Lawlor vs. James Meka",
+			  "action_flag": 2,
+			  "change_message": "[{\"changed\": {\"fields\": [\"child_set\"]}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 26,
+		 "fields": {
+			  "action_time": "2018-02-14T01:21:52.337Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"set"
+			  ],
+			  "object_id": "1",
+			  "object_repr": "Luke Masters vs. Mac Sochor",
+			  "action_flag": 2,
+			  "change_message": "[{\"changed\": {\"fields\": [\"child_set\"]}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 27,
+		 "fields": {
+			  "action_time": "2018-02-14T01:23:03.782Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"game"
+			  ],
+			  "object_id": "4",
+			  "object_repr": "Kian Lawlor vs. James Meka - Round 1",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 28,
+		 "fields": {
+			  "action_time": "2018-02-14T01:23:11.054Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"game"
+			  ],
+			  "object_id": "5",
+			  "object_repr": "Kian Lawlor vs. James Meka - Round 2",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 29,
+		 "fields": {
+			  "action_time": "2018-02-14T01:23:27.056Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"game"
+			  ],
+			  "object_id": "6",
+			  "object_repr": "Mac Sochor vs. Kian Lawlor - Round 1",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 30,
+		 "fields": {
+			  "action_time": "2018-02-14T01:23:35.597Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"game"
+			  ],
+			  "object_id": "7",
+			  "object_repr": "Mac Sochor vs. Kian Lawlor - Round 2",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 31,
+		 "fields": {
+			  "action_time": "2018-02-14T01:23:41.088Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"game"
+			  ],
+			  "object_id": "8",
+			  "object_repr": "Mac Sochor vs. Kian Lawlor - Round 3",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 32,
+		 "fields": {
+			  "action_time": "2018-02-14T01:42:35.877Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"badge"
+			  ],
+			  "object_id": "1",
+			  "object_repr": "PR #1 For Season",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 33,
+		 "fields": {
+			  "action_time": "2018-02-14T01:42:51.088Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"badge"
+			  ],
+			  "object_id": "2",
+			  "object_repr": "PR #2 For Season",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 34,
+		 "fields": {
+			  "action_time": "2018-02-14T01:43:08.244Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"badge"
+			  ],
+			  "object_id": "3",
+			  "object_repr": "PR #3 For Season",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 35,
+		 "fields": {
+			  "action_time": "2018-02-14T01:43:31.570Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"badge"
+			  ],
+			  "object_id": "4",
+			  "object_repr": "Account Created!",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 36,
+		 "fields": {
+			  "action_time": "2018-02-14T01:43:42.310Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"badge"
+			  ],
+			  "object_id": "4",
+			  "object_repr": "Account Created!",
+			  "action_flag": 2,
+			  "change_message": "[{\"changed\": {\"fields\": [\"points\"]}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 37,
+		 "fields": {
+			  "action_time": "2018-02-14T01:44:57.324Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"badgestousers"
+			  ],
+			  "object_id": "1",
+			  "object_repr": "BadgesToUsers object",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 38,
+		 "fields": {
+			  "action_time": "2018-02-14T01:45:06.879Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"badgestousers"
+			  ],
+			  "object_id": "2",
+			  "object_repr": "BadgesToUsers object",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 39,
+		 "fields": {
+			  "action_time": "2018-02-14T01:45:15.668Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"badgestousers"
+			  ],
+			  "object_id": "3",
+			  "object_repr": "BadgesToUsers object",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 40,
+		 "fields": {
+			  "action_time": "2018-02-14T01:45:19.767Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"badgestousers"
+			  ],
+			  "object_id": "4",
+			  "object_repr": "BadgesToUsers object",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 41,
+		 "fields": {
+			  "action_time": "2018-02-14T01:45:24.492Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"badgestousers"
+			  ],
+			  "object_id": "5",
+			  "object_repr": "BadgesToUsers object",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 42,
+		 "fields": {
+			  "action_time": "2018-02-14T01:45:30.909Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"badgestousers"
+			  ],
+			  "object_id": "6",
+			  "object_repr": "BadgesToUsers object",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 43,
+		 "fields": {
+			  "action_time": "2018-02-14T01:45:37.064Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"badgestousers"
+			  ],
+			  "object_id": "7",
+			  "object_repr": "BadgesToUsers object",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 44,
+		 "fields": {
+			  "action_time": "2018-02-14T01:47:04.936Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"powerrank"
+			  ],
+			  "object_id": "1",
+			  "object_repr": "PowerRank object",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 45,
+		 "fields": {
+			  "action_time": "2018-02-14T01:48:09.124Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"powerranktousers"
+			  ],
+			  "object_id": "1",
+			  "object_repr": "PowerRankToUsers object",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 46,
+		 "fields": {
+			  "action_time": "2018-02-14T01:48:14.426Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"powerranktousers"
+			  ],
+			  "object_id": "2",
+			  "object_repr": "PowerRankToUsers object",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 47,
+		 "fields": {
+			  "action_time": "2018-02-14T01:48:20.171Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"powerranktousers"
+			  ],
+			  "object_id": "3",
+			  "object_repr": "PowerRankToUsers object",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 48,
+		 "fields": {
+			  "action_time": "2018-02-14T01:50:32.264Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"tournamenttousers"
+			  ],
+			  "object_id": "1",
+			  "object_repr": "TournamentToUsers object",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 49,
+		 "fields": {
+			  "action_time": "2018-02-14T01:50:36.427Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"tournamenttousers"
+			  ],
+			  "object_id": "2",
+			  "object_repr": "TournamentToUsers object",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 50,
+		 "fields": {
+			  "action_time": "2018-02-14T01:50:40.549Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"tournamenttousers"
+			  ],
+			  "object_id": "3",
+			  "object_repr": "TournamentToUsers object",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 51,
+		 "fields": {
+			  "action_time": "2018-02-14T01:50:44.789Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"tournamenttousers"
+			  ],
+			  "object_id": "4",
+			  "object_repr": "TournamentToUsers object",
+			  "action_flag": 1,
+			  "change_message": "[{\"added\": {}}]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 52,
+		 "fields": {
+			  "action_time": "2018-02-14T01:51:54.454Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"user"
+			  ],
+			  "object_id": "3",
+			  "object_repr": "James Meka",
+			  "action_flag": 3,
+			  "change_message": ""
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 53,
+		 "fields": {
+			  "action_time": "2018-02-14T01:52:34.108Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"user"
+			  ],
+			  "object_id": "1",
+			  "object_repr": "Luke Masters",
+			  "action_flag": 2,
+			  "change_message": "[]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 54,
+		 "fields": {
+			  "action_time": "2018-02-14T17:37:14.993Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"user"
+			  ],
+			  "object_id": "1",
+			  "object_repr": "Luke Masters",
+			  "action_flag": 3,
+			  "change_message": ""
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 55,
+		 "fields": {
+			  "action_time": "2018-02-14T17:49:57.251Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"season"
+			  ],
+			  "object_id": "3",
+			  "object_repr": "Spring 2017",
+			  "action_flag": 2,
+			  "change_message": "[]"
+		 }
+	},
+	{
+		 "model": "admin.logentry",
+		 "pk": 56,
+		 "fields": {
+			  "action_time": "2018-02-18T21:59:12.882Z",
+			  "user": [
+					"admin"
+			  ],
+			  "content_type": [
+					"mainApp",
+					"user"
+			  ],
+			  "object_id": "6",
+			  "object_repr": "Sarah Bland",
+			  "action_flag": 2,
+			  "change_message": "[]"
+		 }
+	}
+	]
+	
