@@ -1,5 +1,5 @@
 Django==1.10
-djangorestframework==3.7.7
+djangorestframework==3.11.2
 elasticsearch==2.4.1
 kafka-python==1.0.0
 mod-wsgi==4.5.7
